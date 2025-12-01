@@ -1,0 +1,16 @@
+{
+  "name": "react-extension",
+  "version": "1.0.0",
+  "description": "chrome extension in react",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc"
+  },
+  "author": "Lucas Sa",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "react": "^17.0.1",
+    "typescript": "^4.1.5"
+  }
+}
