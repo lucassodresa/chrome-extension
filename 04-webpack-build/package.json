@@ -4,13 +4,16 @@
   "description": "chrome extension in react",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack --watch --progress --config webpack.config.js",
     "build": "tsc"
   },
   "author": "Lucas Sa",
   "license": "UNLICENSED",
   "devDependencies": {
     "react": "^17.0.1",
-    "typescript": "^4.1.5"
+    "ts-loader": "^8.4.0",
+    "typescript": "^4.1.5",
+    "webpack": "^5.103.0",
+    "webpack-cli": "^4.10.0"
   }
 }
