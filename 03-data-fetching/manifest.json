@@ -1,4 +1,5 @@
 {
+  "$schema": "https://json.schemastore.org/chrome-manifest",
   "manifest_version": 3,
   "name": "TV Show Search",
   "description": "Search for all your favourite TV shows!",
@@ -9,8 +10,23 @@
     "128": "icon.png"
   },
   "action": {
-    "default_icon": "icon.png",
+    "default_icon": {
+      "16": "icon.png",
+      "24": "icon.png",
+      "32": "icon.png"
+    },
     "default_title": "TV Show Search",
     "default_popup": "popup/popup.html"
-  }
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": ["contextMenus", "search", "tabs", "storage", "tts"],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "css": ["contentScript.css"],
+      "js": ["contentScript.js"]
+    }
+  ]
 }
